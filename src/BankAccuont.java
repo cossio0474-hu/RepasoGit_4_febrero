@@ -1,4 +1,5 @@
-import java.awt.image.BaseMultiResolutionImage;
+
+
 
 public class BankAccuont {
 
@@ -22,26 +23,29 @@ public class BankAccuont {
        return saldo;
    }
 
-   public void consignar(int valorAConstignar) throws IllegalAccessException {
-       if (valorAConstignar <= 0)
-       {
-           throw new IllegalAccessException("EL valor no es valido");
-       }
-       this.saldo += valorAConstignar;
-   }
+   public void consignar(int valorAConsignar)
+    {
+        if (valorAConsignar <= 0)
+        {
+             throw new IllegalArgumentException("the inserted number is not valid");
+        }
 
-public void retirar(int valorARetirar) throws IllegalAccessException {
-if (valorARetirar <= 0)
-{
-    throw new IllegalAccessException("el valor no es valido");
-}
+        this.saldo += valorAConsignar;
+    }
 
-if (valorARetirar > saldo)
-{
-    throw new IllegalAccessException("el valor no es valdio");
-}
+    public void retirar(int valorARetirar)
+    {
+        if(valorARetirar <= 0)
+        {
+            throw new IllegalArgumentException("the inserted number is not valid");
+        }
 
-this.saldo -= valorARetirar;
-}
+        if (valorARetirar > saldo)
+        {
+            throw new IllegalArgumentException("the value inserted is bigger than the available balance");
+        }
+
+        this.saldo -= valorARetirar;
+    }
 
 }
