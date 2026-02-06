@@ -34,5 +34,8 @@ public class Main {
 
       Whatsapp1.enviarMensaje("Tienes nuevos mensajes sin leer");
 
+        NotificacionFacebook facebook1;
+        facebook1 = new NotificacionFacebook("juan P.");
+        facebook1.enviarMensaje("tienes una nueva sugerencia de amistad ");
      }
 }
