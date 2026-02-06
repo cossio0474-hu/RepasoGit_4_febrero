@@ -7,7 +7,7 @@ public class NotificacionCorreo extends  Notificacion{
 
     @Override
     public void enviarMensaje(String mensaje) {
-        System.out.println("Se envio el mensaje \"" + mensaje + "\"por correo a: "
+        System.out.println("Se envio el mensaje \"" + mensaje + "\" por correo a: "
                 + this.receptorNotificacion);
     }
 

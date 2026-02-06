@@ -28,6 +28,14 @@ public class Main {
 
         notificaciones[1].enviarMensaje("Hola mi bro");
 
+        Notificacion[] notificacionesExtras = new Notificacion[2];
+
+        notificacionesExtras[0] = new NotificacionWhatsapp("Cossio");
+
+
+
+        notificacionesExtras[0].enviarMensaje("Tienen nuevos mensajes sin leer");
+
 
      }
 }
