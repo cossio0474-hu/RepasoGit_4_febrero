@@ -28,6 +28,8 @@ public class Main {
 
         notificaciones[1].enviarMensaje("Hola mi bro");
 
-
+        NotificacionFacebook facebook1;
+        facebook1 = new NotificacionFacebook("juan P.");
+        facebook1.enviarMensaje("tienes una nueva sugerencia de amistad ");
      }
 }
