@@ -18,6 +18,15 @@ public class Main {
         System.out.println("The balance after record is: " + cuenta1.getSaldo());
 
 
+        Notificacion[] notificaciones = new Notificacion[2];
+
+        notificaciones[0] = new NotificacionCorreo("pepito");
+        notificaciones[1] = new NotificacionSMS("Juanito");
+
+
+        notificaciones[0].enviarMensaje("Hola mi amigo");
+
+        notificaciones[1].enviarMensaje("Hola mi bro");
 
 
      }
